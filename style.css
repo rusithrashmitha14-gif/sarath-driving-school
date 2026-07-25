@@ -1481,13 +1481,15 @@ ul {
   .hero-title { font-size: 2.75rem !important; }
   .parallax-text { font-size: 2rem !important; }
   
-  /* Fix sticky background on mobile iOS */
-  .hero-bg, .parallax-section {
+  /* Fix sticky background on mobile iOS only for hero */
+  .hero-bg {
     background-attachment: scroll !important;
+    background-position: top center !important;
   }
   
-  .hero-bg {
-    background-position: top center !important;
+  .parallax-section {
+    min-height: 40vh !important;
+    padding: 2rem 5% !important;
   }
   
   /* Force Grids to Stack and Center Align items */
