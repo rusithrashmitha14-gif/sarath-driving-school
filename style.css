@@ -1502,6 +1502,16 @@ ul {
    Mobile Optimization & Responsive Menu Overlay
    ========================================================================== */
 @media (max-width: 900px) {
+  /* Disable scroll animations on mobile */
+  .fade-up,
+  .blur-reveal,
+  .scale-in-image {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+  
   html, body {
     overflow-x: hidden;
   }
