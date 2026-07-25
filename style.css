@@ -1497,7 +1497,7 @@ ul {
     display: flex !important;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 1.5rem;
+    gap: 2.5rem;
     padding: 1rem 0 2rem 0;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -1511,10 +1511,12 @@ ul {
   .mobile-horizontal-scroll::-webkit-scrollbar {
     display: none;
   }
-  .mobile-horizontal-scroll .road-sign-wrapper {
-    flex: 0 0 75%;
+  .mobile-horizontal-scroll .road-sign-wrapper,
+  .mobile-horizontal-scroll .hero-quick-card {
+    flex: 0 0 85%;
     scroll-snap-align: center;
     padding: 0;
+    margin-bottom: 0;
   }
   
   /* Ensure standard images don't overflow */
