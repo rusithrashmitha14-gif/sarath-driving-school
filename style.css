@@ -661,6 +661,15 @@ ul {
   gap: 4rem;
 }
 
+.map-grid {
+  max-width: 1200px;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 3rem;
+  padding: 0 1.5rem;
+}
+
 .luxury-footer {
   padding: 4rem 0;
   border-top: 1px solid var(--color-border);
@@ -1617,7 +1626,8 @@ ul {
     align-items: center;
   }
   
-  .branch-grid {
+  .branch-grid,
+  .map-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
