@@ -1,6 +1,8 @@
 /* ==========================================================================
    Design Tokens & Variables - LUXURY THEME
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 :root {
   /* Colors */
   --color-bg: #080808; /* True Black */
@@ -218,7 +220,7 @@ ul {
 }
 
 .logo-text {
-  font-family: 'Viner Hand ITC', cursive;
+  font-family: 'Viner Hand ITC', 'Great Vibes', cursive;
   font-weight: normal;
   font-size: 1.5rem;
   letter-spacing: 2px;
