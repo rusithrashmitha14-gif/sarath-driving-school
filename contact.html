@@ -47,26 +47,27 @@
           </div>
           
           <!-- Digital Contact Section -->
-          <div class="fade-up" style="max-width: 1000px; margin: 0 auto 4rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; background: var(--color-surface); padding: 4rem; border: 1px solid var(--color-border); align-items: center;">
+          <!-- Digital Contact Section -->
+          <div class="fade-up contact-panel" style="max-width: 1000px; margin: 0 auto 4rem; background: var(--color-surface); padding: 4rem; border: 1px solid var(--color-border);">
             
             <!-- General Hotline -->
-            <div>
+            <div class="contact-general">
               <h3 style="font-size: 1.5rem; margin-bottom: 2.5rem; color: var(--color-accent);">General Inquiries</h3>
               <ul style="list-style: none;">
-                <li style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2rem;">
-                  <div style="background: rgba(212, 175, 55, 0.1); padding: 1rem; border-radius: 50%; border: 1px solid rgba(212, 175, 55, 0.2);">
+                <li class="contact-row">
+                  <div class="icon-circle">
                     <i data-lucide="phone" style="color: var(--color-accent); width: 24px; height: 24px;"></i>
                   </div>
-                  <div>
+                  <div class="contact-text">
                     <h4 style="font-family: var(--font-primary); font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--color-text-muted);">Hotline</h4>
                     <p style="font-size: 1.25rem; margin-top: 0.25rem; color: var(--color-text-main);">+94 71 955 5777</p>
                   </div>
                 </li>
-                <li style="display: flex; align-items: center; gap: 1.5rem;">
-                  <div style="background: rgba(212, 175, 55, 0.1); padding: 1rem; border-radius: 50%; border: 1px solid rgba(212, 175, 55, 0.2);">
+                <li class="contact-row">
+                  <div class="icon-circle">
                     <i data-lucide="mail" style="color: var(--color-accent); width: 24px; height: 24px;"></i>
                   </div>
-                  <div>
+                  <div class="contact-text">
                     <h4 style="font-family: var(--font-primary); font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--color-text-muted);">Email</h4>
                     <p style="font-size: 1rem; margin-top: 0.25rem; color: var(--color-text-main);">sarathdrivingschool@gmail.com</p>
                   </div>
@@ -75,8 +76,8 @@
             </div>
 
             <!-- WhatsApp -->
-            <div style="border-left: 1px solid var(--color-border); padding-left: 4rem; height: 100%; display: flex; flex-direction: column; justify-content: center;">
-              <div style="background: rgba(37, 211, 102, 0.1); width: max-content; padding: 1rem; border-radius: 50%; margin-bottom: 1.5rem; border: 1px solid rgba(37, 211, 102, 0.2);">
+            <div class="contact-whatsapp">
+              <div class="icon-circle-green">
                 <i data-lucide="message-circle" style="color: #25D366; width: 32px; height: 32px;"></i>
               </div>
               <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--color-text-main);">Chat with us</h3>
@@ -93,15 +94,15 @@
           </div>
 
           <!-- Branches Grid -->
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; max-width: 1000px; margin: 0 auto;">
+          <div class="branch-grid" style="max-width: 1000px; margin: 0 auto;">
             
             <!-- Veyangoda Branch -->
             <div class="fade-up">
               <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--color-accent); padding-bottom: 1rem; border-bottom: 1px solid var(--color-border);">Veyangoda Branch (Head Office)</h3>
               <ul style="list-style: none;">
-                <li style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+                <li class="contact-row align-top">
                   <i data-lucide="map-pin" style="color: var(--color-accent); width: 24px; height: 24px; flex-shrink: 0;"></i>
-                  <div>
+                  <div class="contact-text">
                     <h4 style="font-family: var(--font-primary); font-size: 0.875rem; letter-spacing: 2px; text-transform: uppercase; color: var(--color-text-muted);">Location</h4>
                     <p style="color: var(--color-text-main); margin-top: 0.5rem; font-size: 1.1rem;">B445, Veyangoda 11100</p>
                     <a href="https://maps.app.goo.gl/MdwXccaWZ2EML6K68" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--color-accent); font-size: 0.875rem; margin-top: 1rem; text-decoration: none; border-bottom: 1px solid var(--color-accent); padding-bottom: 2px; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
@@ -109,9 +110,9 @@
                     </a>
                   </div>
                 </li>
-                <li style="display: flex; gap: 1.5rem;">
+                <li class="contact-row align-top">
                   <i data-lucide="phone" style="color: var(--color-accent); width: 24px; height: 24px; opacity: 0.5; flex-shrink: 0;"></i>
-                  <div>
+                  <div class="contact-text">
                     <h4 style="font-family: var(--font-primary); font-size: 0.875rem; letter-spacing: 2px; text-transform: uppercase; color: var(--color-text-muted); opacity: 0.5;">Direct Line</h4>
                     <p style="color: var(--color-text-muted); margin-top: 0.5rem; font-style: italic;">Coming soon</p>
                   </div>
@@ -123,9 +124,9 @@
             <div class="fade-up delay-1">
               <h3 style="font-size: 1.5rem; margin-bottom: 2rem; color: var(--color-accent); padding-bottom: 1rem; border-bottom: 1px solid var(--color-border);">Nittambuwa Branch</h3>
               <ul style="list-style: none;">
-                <li style="display: flex; gap: 1.5rem; margin-bottom: 2rem;">
+                <li class="contact-row align-top">
                   <i data-lucide="map-pin" style="color: var(--color-accent); width: 24px; height: 24px; flex-shrink: 0;"></i>
-                  <div>
+                  <div class="contact-text">
                     <h4 style="font-family: var(--font-primary); font-size: 0.875rem; letter-spacing: 2px; text-transform: uppercase; color: var(--color-text-muted);">Location</h4>
                     <p style="color: var(--color-text-main); margin-top: 0.5rem; font-size: 1.1rem;">Market, No, 17 B new super, Nittambuwa 11880</p>
                     <a href="https://maps.app.goo.gl/X3Dw7YZpM92LXSNQ6" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--color-accent); font-size: 0.875rem; margin-top: 1rem; text-decoration: none; border-bottom: 1px solid var(--color-accent); padding-bottom: 2px; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
@@ -133,16 +134,15 @@
                     </a>
                   </div>
                 </li>
-                <li style="display: flex; gap: 1.5rem;">
+                <li class="contact-row align-top">
                   <i data-lucide="phone" style="color: var(--color-accent); width: 24px; height: 24px; opacity: 0.5; flex-shrink: 0;"></i>
-                  <div>
+                  <div class="contact-text">
                     <h4 style="font-family: var(--font-primary); font-size: 0.875rem; letter-spacing: 2px; text-transform: uppercase; color: var(--color-text-muted); opacity: 0.5;">Direct Line</h4>
                     <p style="color: var(--color-text-muted); margin-top: 0.5rem; font-style: italic;">Coming soon</p>
                   </div>
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
       </section>
