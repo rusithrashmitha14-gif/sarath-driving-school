@@ -1459,6 +1459,10 @@ ul {
   }
   
   /* Global Typography & Spacing adjustments */
+  body {
+    text-align: center;
+  }
+  
   .section-padding {
     padding: 4rem 0 !important;
   }
@@ -1466,14 +1470,27 @@ ul {
   h1 { font-size: 2.5rem !important; }
   h2 { font-size: 2rem !important; }
   .hero-title { font-size: 2.75rem !important; }
+  .parallax-text { font-size: 2rem !important; }
   
-  /* Force Grids to Stack */
+  /* Fix sticky background on mobile iOS */
+  .hero-bg, .parallax-section {
+    background-attachment: scroll !important;
+  }
+  
+  /* Force Grids to Stack and Center Align items */
   .fleet-grid,
   .special-training-grid,
   .leadership-grid,
   .standard-grid {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
+    text-align: center;
+    justify-items: center;
+  }
+  
+  /* Ensure standard images don't overflow */
+  .standard-image {
+    width: 100%;
   }
   
   .page-header {
