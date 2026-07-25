@@ -1416,3 +1416,67 @@ ul {
     font-size: 2.5rem;
   }
 }
+
+/* ==========================================================================
+   Mobile Optimization & Responsive Menu Overlay
+   ========================================================================== */
+@media (max-width: 900px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+    z-index: 1000;
+  }
+
+  nav#nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(10, 10, 10, 0.98);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 999;
+  }
+  
+  nav#nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    display: flex !important;
+  }
+
+  nav#nav-links a {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Global Typography & Spacing adjustments */
+  .section-padding {
+    padding: 4rem 0 !important;
+  }
+  
+  h1 { font-size: 2.5rem !important; }
+  h2 { font-size: 2rem !important; }
+  .hero-title { font-size: 2.75rem !important; }
+  
+  /* Force Grids to Stack */
+  .fleet-grid,
+  .special-training-grid,
+  .leadership-grid,
+  .standard-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  .page-header {
+    padding: 6rem 0 3rem !important;
+  }
+}
