@@ -1582,6 +1582,7 @@ ul {
   /* Horizontal Scroll for Road Sign Cards on Mobile */
   .mobile-horizontal-scroll {
     display: flex !important;
+    flex-direction: row !important;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 2.5rem;
