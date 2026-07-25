@@ -799,6 +799,15 @@ ul {
   gap: 40vh; /* Massive gap to force scrolling between cards */
 }
 
+/* Force override any cached fade-up classes from old HTML */
+.mobile-horizontal-scroll .road-sign-wrapper {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
 .road-sign-wrapper {
   display: flex;
   justify-content: center;
@@ -1600,15 +1609,6 @@ ul {
   }
   .mobile-horizontal-scroll::-webkit-scrollbar {
     display: none;
-  }
-  
-  /* Force disable any cached fade-up classes on road signs */
-  .mobile-horizontal-scroll .road-sign-wrapper {
-    opacity: 1 !important;
-    transform: none !important;
-    animation: none !important;
-    transition: none !important;
-    visibility: visible !important;
   }
   
   .mobile-horizontal-scroll .road-sign-wrapper,
