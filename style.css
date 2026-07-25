@@ -43,7 +43,6 @@ html {
 }
 
 html, body {
-  overflow-x: hidden;
   width: 100%;
 }
 
@@ -52,7 +51,6 @@ body {
   color: var(--color-text-main);
   background-color: var(--color-bg);
   line-height: 1.6;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1504,6 +1502,10 @@ ul {
    Mobile Optimization & Responsive Menu Overlay
    ========================================================================== */
 @media (max-width: 900px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  
   .hide-mobile {
     display: none !important;
   }
