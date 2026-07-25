@@ -641,16 +641,27 @@ ul {
    Parallax & Split Layouts (Punchy Theme)
    ========================================================================== */
 .parallax-section {
-  background-image: url('/parallax_driving.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  clip-path: inset(0); /* Crucial for iOS fixed background hack */
   min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 4rem 10%;
+}
+
+.parallax-section::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/parallax_driving.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 .parallax-text {
