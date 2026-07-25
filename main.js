@@ -25,11 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-      navbar.style.padding = '0';
-      navbar.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1)';
+      if (navbar) navbar.classList.add('scrolled');
     } else {
-      navbar.style.padding = '10px 0';
-      navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.05)';
+      if (navbar) navbar.classList.remove('scrolled');
     }
 
     if (window.scrollY > 500) {
@@ -49,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 3. Scroll Animations (Intersection Observer)
-  const fadeUpElements = document.querySelectorAll('.fade-up');
+  const animatedElements = document.querySelectorAll('.fade-up, .blur-reveal, .scale-in-image, .luxury-line, .draw-line');
   
   const observerOptions = {
     root: null,
@@ -57,17 +55,17 @@ document.addEventListener('DOMContentLoaded', () => {
     threshold: 0.1
   };
 
-  const fadeUpObserver = new IntersectionObserver((entries, observer) => {
+  const animationObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
+        entry.target.classList.add('visible');
         observer.unobserve(entry.target); // Only animate once
       }
     });
   }, observerOptions);
 
-  fadeUpElements.forEach(el => {
-    fadeUpObserver.observe(el);
+  animatedElements.forEach(el => {
+    animationObserver.observe(el);
   });
 
   // 4. Animated Counters
@@ -103,4 +101,45 @@ document.addEventListener('DOMContentLoaded', () => {
   statNumbers.forEach(num => {
     counterObserver.observe(num);
   });
+
+  // 5. Testimonial Carousel
+  const testimonialCards = document.querySelectorAll('.testimonial-card');
+  const nextBtn = document.querySelector('.next-btn');
+  const prevBtn = document.querySelector('.prev-btn');
+  let currentTestimonialIndex = 0;
+
+  if (testimonialCards.length > 0 && nextBtn && prevBtn) {
+    function showTestimonial(newIndex, direction) {
+      const currentCard = testimonialCards[currentTestimonialIndex];
+      const nextCard = testimonialCards[newIndex];
+      
+      testimonialCards.forEach(card => {
+        card.classList.remove('active', 'drive-in-right', 'drive-out-left', 'drive-in-left', 'drive-out-right');
+      });
+      
+      // Force DOM reflow to ensure animations restart
+      void currentCard.offsetWidth;
+      void nextCard.offsetWidth;
+
+      if (direction === 'next') {
+        currentCard.classList.add('drive-out-left', 'active');
+        nextCard.classList.add('drive-in-right', 'active');
+      } else {
+        currentCard.classList.add('drive-out-right', 'active');
+        nextCard.classList.add('drive-in-left', 'active');
+      }
+      
+      currentTestimonialIndex = newIndex;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      const newIndex = (currentTestimonialIndex + 1) % testimonialCards.length;
+      showTestimonial(newIndex, 'next');
+    });
+
+    prevBtn.addEventListener('click', () => {
+      const newIndex = (currentTestimonialIndex - 1 + testimonialCards.length) % testimonialCards.length;
+      showTestimonial(newIndex, 'prev');
+    });
+  }
 });

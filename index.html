@@ -4,482 +4,419 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sarath Driving School | Veyangoda & Nittambuwa</title>
-    <meta name="description" content="Government Approved A Grade Driving School with Over 40 Years of Experience. Serving Veyangoda, Nittambuwa, Gampaha, and nearby towns." />
+    <title>Sarath Driving School | Luxury Experience</title>
     
-    <!-- Google Fonts: Inter & Poppins -->
+    <!-- Google Fonts: Playfair Display (Serif) & Montserrat (Sans-Serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <body>
-    <!-- Top Bar (Optional, for Book a Free Consultation) -->
-    <div class="top-bar">
-      <div class="container">
-        <span>Start Your Driving Journey Today!</span>
-        <a href="#contact" class="top-bar-cta">Book a Free Consultation</a>
-      </div>
-    </div>
-
+  <body class="luxury-theme">
+    
     <!-- Navigation -->
-    <header class="navbar" id="navbar">
+    <header class="luxury-navbar" id="navbar">
       <div class="container nav-container">
-        <a href="#" class="logo">
-          <span class="logo-text">Sarath<br><small>Driving School</small></span>
+        <a href="/index.html" class="logo">
+          <div class="l-board-logo">L</div>
+          <span class="logo-text">SARATH<br><small style="font-family: 'Montserrat', sans-serif; font-weight: 500; letter-spacing: 2px;">DRIVING SCHOOL</small></span>
         </a>
+        <nav class="nav-links hide-mobile">
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/courses.html">Courses</a>
+          <a href="/rentals.html">Rentals</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+        <div class="nav-contact hide-mobile">
+          <a href="tel:+94719555777" class="nav-call-btn"><i data-lucide="phone" style="width: 16px; height: 16px;"></i> Call Us</a>
+        </div>
         <button class="mobile-menu-btn" id="mobile-menu-btn">
           <i data-lucide="menu"></i>
         </button>
-        <nav class="nav-links" id="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#courses">Courses</a>
-          <a href="#why-us">Why Choose Us</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#contact">Contact</a>
-          <a href="#contact" class="btn btn-primary nav-cta">Book Your Training</a>
-        </nav>
       </div>
     </header>
 
     <main>
-      <!-- Hero Section -->
-      <section id="home" class="hero">
-        <div class="hero-background"></div>
+      <!-- Luxury Hero Section -->
+      <section id="home" class="luxury-hero sticky-hero-container">
+        <div class="hero-bg" style="background-image: url('/user_hero.jpg');"></div>
         <div class="hero-overlay"></div>
-        <div class="container hero-content">
-          <div class="hero-text fade-up">
-            <h1>Learn to Drive with Confidence</h1>
-            <p class="subtitle">Government Approved A Grade Driving School with Over 40 Years of Experience.</p>
-            <div class="hero-buttons">
-              <a href="#contact" class="btn btn-primary">Book Now</a>
-              <a href="#courses" class="btn btn-secondary">View Courses</a>
+        
+        <div class="container hero-content sticky-layout">
+          <!-- Sticky Left Side -->
+          <div class="sticky-left">
+            <div class="hero-text fade-up">
+              <h1 style="font-style: normal;">Learn to Drive with<br><span style="font-style: italic; color: var(--color-accent);">Confidence</span></h1>
+              <p class="subtitle" style="font-size: 1.25rem; font-weight: 400; max-width: 500px; color: #FFFFFF;">Government Approved A Grade Driving School with Over 40 Years of Experience.</p>
+              <a href="/courses.html" class="btn btn-luxury" style="margin-top: 1rem;">START YOUR JOURNEY</a>
             </div>
           </div>
           
-          <div class="hero-stats fade-up delay-1">
-            <div class="stat-badge">
-              <i data-lucide="award"></i>
-              <span>40+ Years Experience</span>
+          <!-- Scrolling Right Side -->
+          <div class="scroll-right">
+            <!-- Quick Action Card -->
+            <div class="hero-quick-card scrolling-card" style="background: rgba(17, 17, 17, 0.7); backdrop-filter: blur(12px); border: 1px solid var(--color-border); padding: 2.5rem; border-radius: 4px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+              <span class="eyebrow" style="margin-bottom: 1rem;">NEXT INTAKE</span>
+              <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Start This Week</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.875rem; margin-bottom: 2rem;">We have immediate availability for Light Vehicle and Motorcycle training at our Veyangoda grounds.</p>
+              <a href="/contact.html" class="btn-text">BOOK A CONSULTATION <i data-lucide="arrow-right"></i></a>
             </div>
-            <div class="stat-badge">
-              <i data-lucide="users"></i>
-              <span>Thousands of Successful Drivers</span>
-            </div>
-            <div class="stat-badge">
-              <i data-lucide="shield-check"></i>
-              <span>Government Approved</span>
-            </div>
-            <div class="stat-badge">
-              <i data-lucide="user-check"></i>
-              <span>Professional Instructors</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- About Section -->
-      <section id="about" class="about section-padding">
-        <div class="container">
-          <div class="section-header fade-up">
-            <h2>Your Trusted Driving School in Veyangoda & Nittambuwa</h2>
-            <div class="heading-line"></div>
-          </div>
-          <div class="about-grid">
-            <div class="about-text fade-up">
-              <p>Sarath Driving School has been providing professional driver training for more than four decades.</p>
-              <p>Our mission is to develop disciplined, responsible and confident drivers through quality education, practical training and modern teaching methods.</p>
-              <p>We are proud to be one of the leading government-approved A Grade driving schools serving Veyangoda, Nittambuwa, Gampaha, Mirigama, Pasyala, and Diwulapitiya.</p>
+            <!-- Stat 1: Road Sign -->
+            <div class="road-sign-wrapper scrolling-card">
+              <div class="road-sign-card">
+                <div class="road-sign-content">
+                  <i data-lucide="award" style="color: #000; width: 32px; height: 32px; margin-bottom: 0.5rem;"></i>
+                  <h3>40+</h3>
+                  <p>Years Unmatched<br>Experience</p>
+                </div>
+              </div>
             </div>
-            <div class="about-image-wrapper fade-up delay-1">
-              <div class="about-image placeholder-image"></div>
-              <div class="experience-badge">
-                <span class="number">40+</span>
-                <span class="text">Years of Excellence</span>
+
+            <!-- Stat 2: Road Sign -->
+            <div class="road-sign-wrapper scrolling-card">
+              <div class="road-sign-card">
+                <div class="road-sign-content">
+                  <i data-lucide="users" style="color: #000; width: 32px; height: 32px; margin-bottom: 0.5rem;"></i>
+                  <h3>60k+</h3>
+                  <p>Successful<br>Drivers</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stat 3: Road Sign -->
+            <div class="road-sign-wrapper scrolling-card">
+              <div class="road-sign-card">
+                <div class="road-sign-content">
+                  <i data-lucide="shield-check" style="color: #000; width: 32px; height: 32px; margin-bottom: 0.5rem;"></i>
+                  <h3>'A'</h3>
+                  <p>Grade Govt<br>Approved</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stat 4: Road Sign -->
+            <div class="road-sign-wrapper scrolling-card">
+              <div class="road-sign-card">
+                <div class="road-sign-content">
+                  <i data-lucide="steering-wheel" style="color: #000; width: 32px; height: 32px; margin-bottom: 0.5rem;"></i>
+                  <h3>Elite</h3>
+                  <p>Professional<br>Instructors</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Why Choose Us -->
-      <section id="why-us" class="why-us section-padding bg-light">
+      <!-- Introduction Section -->
+      <section class="section-padding">
         <div class="container">
-          <div class="section-header fade-up">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+            <div class="intro-text fade-up">
+              <span class="eyebrow" style="color: var(--color-accent); font-weight: 700; letter-spacing: 2px;">YOUR TRUSTED DRIVING SCHOOL</span>
+              <h2 style="font-size: 3rem; margin-bottom: 2rem; text-transform: uppercase; line-height: 1.4;">
+                IN <span class="highlight-block">VEYANGODA</span> &<br>
+                <span class="highlight-block">NITTAMBUWA</span>
+              </h2>
+              <div class="luxury-line" style="margin-bottom: 2rem;"></div>
+              <p style="font-size: 1.125rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+                Sarath Driving School has been providing professional driver training for more than four decades.
+              </p>
+              <p style="font-size: 1.125rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+                Our mission is to develop disciplined, responsible and confident drivers through quality education, practical training and modern teaching methods.
+              </p>
+              <p style="font-size: 1.125rem; color: var(--color-text-main); font-weight: 600;">
+                We are proud to be one of the leading government-approved A Grade driving schools serving Veyangoda and Nittambuwa.
+              </p>
+              <a href="/contact.html" class="btn btn-luxury" style="margin-top: 1.5rem;">VIEW OUR LOCATIONS</a>
+            </div>
+            <div class="intro-image fade-up delay-1" style="position: relative;">
+              <div style="position: absolute; inset: -20px; background: linear-gradient(45deg, var(--color-accent), transparent); border-radius: 8px; opacity: 0.1; filter: blur(20px);"></div>
+              <img src="/driving_school_intro.png" alt="Driving Instructor" style="width: 100%; border-radius: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); position: relative; z-index: 2;">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section id="why-us" class="section-padding theme-light">
+        <div class="container">
+          <div class="section-header fade-up" style="text-align: center;">
+            <span class="eyebrow" style="color: var(--color-accent); font-weight: 700; letter-spacing: 2px;">THE SARATH DIFFERENCE</span>
             <h2>Why Choose Us</h2>
-            <div class="heading-line"></div>
+            <div class="luxury-line" style="margin: 0 auto 3rem auto;"></div>
           </div>
-          <div class="features-grid">
-            <div class="feature-card fade-up">
-              <div class="icon-wrapper"><i data-lucide="graduation-cap"></i></div>
-              <h3>Experienced Instructors</h3>
-              <p>Learn from patient, highly qualified professionals.</p>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+            <!-- Feature 1 -->
+            <div class="feature-card fade-up" style="background: rgba(255,255,255,0.03); padding: 2.5rem; border-radius: 4px; border: 1px solid var(--color-border); text-align: center;">
+              <i data-lucide="graduation-cap" style="color: var(--color-accent); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
+              <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Experienced Instructors</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem;">Learn from patient, highly qualified professionals.</p>
             </div>
-            <div class="feature-card fade-up delay-1">
-              <div class="icon-wrapper"><i data-lucide="shield"></i></div>
-              <h3>Government Approved</h3>
-              <p>A Grade certified driving school.</p>
+            
+            <!-- Feature 2 -->
+            <div class="feature-card fade-up delay-1" style="background: rgba(255,255,255,0.03); padding: 2.5rem; border-radius: 4px; border: 1px solid var(--color-border); text-align: center;">
+              <i data-lucide="shield-check" style="color: var(--color-accent); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
+              <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Government Approved</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem;">A Grade certified driving school.</p>
             </div>
-            <div class="feature-card fade-up delay-2">
-              <div class="icon-wrapper"><i data-lucide="clock"></i></div>
-              <h3>40+ Years Experience</h3>
-              <p>Decades of excellence in driver training.</p>
+            
+            <!-- Feature 3 -->
+            <div class="feature-card fade-up delay-2" style="background: rgba(255,255,255,0.03); padding: 2.5rem; border-radius: 4px; border: 1px solid var(--color-border); text-align: center;">
+              <i data-lucide="award" style="color: var(--color-accent); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
+              <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">40+ Years Experience</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem;">Decades of excellence in driver training.</p>
             </div>
-            <div class="feature-card fade-up">
-              <div class="icon-wrapper"><i data-lucide="monitor-play"></i></div>
-              <h3>Modern Lecture Hall</h3>
-              <p>Comfortable theory classes with modern facilities.</p>
+            
+            <!-- Feature 4 -->
+            <div class="feature-card fade-up" style="background: rgba(255,255,255,0.03); padding: 2.5rem; border-radius: 4px; border: 1px solid var(--color-border); text-align: center;">
+              <i data-lucide="monitor-play" style="color: var(--color-accent); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
+              <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Modern Lecture Hall</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem;">Comfortable theory classes with modern facilities.</p>
             </div>
-            <div class="feature-card fade-up delay-1">
-              <div class="icon-wrapper"><i data-lucide="map"></i></div>
-              <h3>Dedicated Training Ground</h3>
-              <p>Safe environment for beginners.</p>
+            
+            <!-- Feature 5 -->
+            <div class="feature-card fade-up delay-1" style="background: rgba(255,255,255,0.03); padding: 2.5rem; border-radius: 4px; border: 1px solid var(--color-border); text-align: center;">
+              <i data-lucide="map" style="color: var(--color-accent); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
+              <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Dedicated Training Ground</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem;">Safe environment for beginners.</p>
             </div>
-            <div class="feature-card fade-up delay-2">
-              <div class="icon-wrapper"><i data-lucide="truck"></i></div>
-              <h3>Comprehensive Fleet</h3>
-              <p>From Motorcycles to Prime Movers.</p>
+            
+            <!-- Feature 6 -->
+            <div class="feature-card fade-up delay-2" style="background: rgba(255,255,255,0.03); padding: 2.5rem; border-radius: 4px; border: 1px solid var(--color-border); text-align: center;">
+              <i data-lucide="car" style="color: var(--color-accent); width: 40px; height: 40px; margin-bottom: 1.5rem;"></i>
+              <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Comprehensive Fleet</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem;">From Motorcycles to Prime Movers.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Courses -->
-      <section id="courses" class="courses section-padding">
+      <!-- Parallax Drive Section -->
+      <section class="parallax-section">
+        <div class="parallax-text">
+          DRIVE WITH<br>HIGHLY<br>TRAINED<br>INSTRUCTORS
+        </div>
+      </section>
+
+      <!-- Split Layout Stats -->
+      <section class="split-section">
+        <div class="split-half split-yellow fade-up">
+          <h2 class="split-heading">
+            40 YEARS<br>60,000 DRIVERS
+          </h2>
+          <a href="/about.html" class="btn-outline-dark">OUR STORY</a>
+        </div>
+        <div class="split-half split-white fade-up delay-1">
+          <h2 class="split-heading">
+            NOT YOUR<br><span style="color: #FFCC00; font-style: italic;">TYPICAL</span><br>DRIVING SCHOOL
+          </h2>
+          <a href="/courses.html" class="btn-outline-dark">THE DIFFERENCE</a>
+        </div>
+      </section>
+
+      <!-- Our Fleet Section (Todays Specials equivalent) -->
+      <section id="fleet" class="luxury-fleet section-padding">
         <div class="container">
           <div class="section-header fade-up">
-            <h2>Our Courses</h2>
-            <p class="subtitle">Comprehensive training programs for all vehicle classes</p>
-            <div class="heading-line"></div>
+            <span class="eyebrow">OUR FLEET</span>
+            <h2>Master Every Vehicle</h2>
+            <div class="luxury-line"></div>
           </div>
-          <div class="courses-grid">
-            <div class="course-card fade-up">
-              <div class="course-image placeholder-image bg-course-1"></div>
-              <div class="course-content">
-                <h3>Motorcycle Training</h3>
-                <p>Categories A, A1</p>
-                <a href="#contact" class="btn btn-outline">Learn More</a>
+          
+          <div class="fleet-grid">
+            <!-- Light Vehicles (Combined) -->
+            <div class="fleet-card fade-up">
+              <div class="fleet-image" style="background-image: url('/fleet_light_combined.png');"></div>
+              <div class="fleet-info">
+                <h3>Light Vehicles</h3>
+                <span class="category">Category B / B1</span>
+                <p>Master manual and automatic transmissions with our modern dual-controlled fleet including vans and cars.</p>
+                <div class="fleet-footer">
+                  <span class="price">AUTO/MANUAL</span>
+                  <a href="#contact" class="btn-text">INQUIRE <i data-lucide="arrow-right"></i></a>
+                </div>
               </div>
             </div>
-            <div class="course-card fade-up delay-1">
-              <div class="course-image placeholder-image bg-course-2"></div>
-              <div class="course-content">
-                <h3>Three Wheeler Training</h3>
-                <p>Category B1</p>
-                <a href="#contact" class="btn btn-outline">Learn More</a>
+
+            <!-- Motorcycles (Combined) -->
+            <div class="fleet-card fade-up delay-1">
+              <div class="fleet-image" style="background-image: url('/fleet_moto_combined.png');"></div>
+              <div class="fleet-info">
+                <h3>Motorcycles</h3>
+                <span class="category">Category A / A1</span>
+                <p>Precision control, balance, and advanced road awareness for manual and automatic two-wheelers.</p>
+                <div class="fleet-footer">
+                  <span class="price">AUTO/MANUAL</span>
+                  <a href="#contact" class="btn-text">INQUIRE <i data-lucide="arrow-right"></i></a>
+                </div>
               </div>
             </div>
-            <div class="course-card fade-up delay-2">
-              <div class="course-image placeholder-image bg-course-3"></div>
-              <div class="course-content">
-                <h3>Car Training (Auto/Manual)</h3>
-                <p>Category B</p>
-                <a href="#contact" class="btn btn-outline">Learn More</a>
+
+            <!-- Three Wheelers -->
+            <div class="fleet-card fade-up delay-2">
+              <div class="fleet-image" style="background-image: url('/fleet_tuk.png');"></div>
+              <div class="fleet-info">
+                <h3>Three Wheelers</h3>
+                <span class="category">Category G</span>
+                <p>Learn to navigate busy streets with confidence in our custom training three-wheelers.</p>
+                <div class="fleet-footer">
+                  <span class="price">PASSENGER</span>
+                  <a href="#contact" class="btn-text">INQUIRE <i data-lucide="arrow-right"></i></a>
+                </div>
               </div>
             </div>
-            <div class="course-card fade-up">
-              <div class="course-image placeholder-image bg-course-4"></div>
-              <div class="course-content">
-                <h3>Heavy Vehicle Training</h3>
-                <p>Categories C, CE</p>
-                <a href="#contact" class="btn btn-outline">Learn More</a>
+
+            <!-- Heavy Commercial -->
+            <div class="fleet-card fade-up delay-3">
+              <div class="fleet-image" style="background-image: url('/fleet_heavy.png');"></div>
+              <div class="fleet-info">
+                <h3>Heavy Commercial</h3>
+                <span class="category">Category C / CE</span>
+                <p>Professional training for prime movers and heavy lorries. Elite instruction for commercial drivers.</p>
+                <div class="fleet-footer">
+                  <span class="price">COMMERCIAL</span>
+                  <a href="#contact" class="btn-text">INQUIRE <i data-lucide="arrow-right"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Training Process Timeline -->
-      <section id="process" class="process section-padding bg-dark text-white">
+      <!-- The Standard Section (Split Screen) -->
+      <section id="standard" class="luxury-standard section-padding">
         <div class="container">
-          <div class="section-header fade-up">
-            <h2>Your Journey to a Driving License</h2>
-            <div class="heading-line bg-yellow"></div>
-          </div>
-          <div class="timeline">
-            <div class="timeline-item fade-up">
-              <div class="timeline-dot">1</div>
-              <div class="timeline-content">
-                <h3>Register</h3>
-                <p>Sign up with us and get started.</p>
-              </div>
+          <div class="standard-grid">
+            <div class="standard-image fade-up">
+              <!-- Reusing a dark image for atmospheric effect -->
+              <div class="img-wrapper" style="background-image: url('/instructor_student_bright.png');"></div>
             </div>
-            <div class="timeline-item fade-up">
-              <div class="timeline-dot">2</div>
-              <div class="timeline-content">
-                <h3>Medical & Learner Permit</h3>
-                <p>We guide you through the documentation process.</p>
-              </div>
-            </div>
-            <div class="timeline-item fade-up">
-              <div class="timeline-dot">3</div>
-              <div class="timeline-content">
-                <h3>Theory Lessons</h3>
-                <p>Comprehensive classes in our modern lecture hall.</p>
-              </div>
-            </div>
-            <div class="timeline-item fade-up">
-              <div class="timeline-dot">4</div>
-              <div class="timeline-content">
-                <h3>Practical Driving</h3>
-                <p>Hands-on training with professional instructors.</p>
-              </div>
-            </div>
-            <div class="timeline-item fade-up">
-              <div class="timeline-dot">5</div>
-              <div class="timeline-content">
-                <h3>Government Driving Test</h3>
-                <p>Pass your test with confidence.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Stats Section -->
-      <section class="stats section-padding">
-        <div class="container">
-          <div class="stats-grid">
-            <div class="stat-item fade-up">
-              <div class="stat-number" data-target="40">0</div>
-              <div class="stat-label">Years Experience</div>
-            </div>
-            <div class="stat-item fade-up delay-1">
-              <div class="stat-number" data-target="5000">0</div>
-              <div class="stat-label">Students Trained</div>
-            </div>
-            <div class="stat-item fade-up delay-2">
-              <div class="stat-number" data-target="100">0</div>
-              <div class="stat-label">Government Approved</div>
-            </div>
-            <div class="stat-item fade-up delay-3">
-              <div class="stat-number" data-target="100">0</div>
-              <div class="stat-label">% Dedicated Support</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Why Students Love Us -->
-      <section class="love-us section-padding bg-light">
-        <div class="container">
-          <div class="section-header fade-up">
-            <h2>Why Students Love Us</h2>
-            <div class="heading-line"></div>
-          </div>
-          <div class="love-grid">
-            <div class="love-card fade-up">
-              <i data-lucide="heart" class="text-accent"></i>
-              <h3>Patient instructors</h3>
-            </div>
-            <div class="love-card fade-up delay-1">
-              <i data-lucide="smile" class="text-accent"></i>
-              <h3>Friendly environment</h3>
-            </div>
-            <div class="love-card fade-up delay-2">
-              <i data-lucide="shield-check" class="text-accent"></i>
-              <h3>Safe vehicles</h3>
-            </div>
-            <div class="love-card fade-up">
-              <i data-lucide="calendar" class="text-accent"></i>
-              <h3>Flexible schedules</h3>
-            </div>
-            <div class="love-card fade-up delay-1">
-              <i data-lucide="award" class="text-accent"></i>
-              <h3>Excellent pass rate</h3>
-            </div>
-            <div class="love-card fade-up delay-2">
-              <i data-lucide="map" class="text-accent"></i>
-              <h3>Real road experience</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Gallery (Masonry) -->
-      <section id="gallery" class="gallery section-padding">
-        <div class="container">
-          <div class="section-header fade-up">
-            <h2>Our Gallery</h2>
-            <p class="subtitle">Glimpses of our training and success moments</p>
-            <div class="heading-line"></div>
-          </div>
-          <div class="masonry-grid">
-            <div class="masonry-item fade-up bg-gallery-1 tall"></div>
-            <div class="masonry-item fade-up delay-1 bg-gallery-2"></div>
-            <div class="masonry-item fade-up delay-2 bg-gallery-3"></div>
-            <div class="masonry-item fade-up delay-3 bg-gallery-4"></div>
-            <div class="masonry-item fade-up bg-gallery-5 wide"></div>
-            <div class="masonry-item fade-up delay-1 bg-gallery-6 tall"></div>
-            <div class="masonry-item fade-up delay-2 bg-gallery-7"></div>
-            <div class="masonry-item fade-up bg-gallery-8"></div>
-            <div class="masonry-item fade-up delay-1 bg-gallery-9"></div>
-            <div class="masonry-item fade-up delay-2 bg-gallery-10 wide"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials -->
-      <section id="testimonials" class="testimonials section-padding bg-dark text-white">
-        <div class="container">
-          <div class="section-header fade-up">
-            <h2>What Our Students Say</h2>
-            <div class="heading-line bg-yellow"></div>
-          </div>
-          <div class="testimonials-grid">
-            <div class="testimonial-card fade-up">
-              <div class="stars">★★★★★</div>
-              <p>"Highly professional instructors. I passed my driving test on my first attempt."</p>
-              <div class="author">- Kasun P.</div>
-            </div>
-            <div class="testimonial-card fade-up delay-1">
-              <div class="stars">★★★★★</div>
-              <p>"The best driving school around Veyangoda. The modern lecture hall is great."</p>
-              <div class="author">- Sanduni M.</div>
-            </div>
-            <div class="testimonial-card fade-up delay-2">
-              <div class="stars">★★★★★</div>
-              <p>"Very friendly staff and excellent practical lessons on real roads."</p>
-              <div class="author">- Nuwan T.</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FAQ Section -->
-      <section id="faq" class="faq section-padding bg-light">
-        <div class="container">
-          <div class="section-header fade-up">
-            <h2>Frequently Asked Questions</h2>
-            <div class="heading-line"></div>
-          </div>
-          <div class="faq-grid fade-up">
-            <details class="faq-item">
-              <summary>How long does training take?</summary>
-              <p>It depends on your current skill level and the package you choose. Generally, a complete course takes around 1 to 2 months.</p>
-            </details>
-            <details class="faq-item">
-              <summary>What vehicles can I learn?</summary>
-              <p>We provide training for Motorcycles, Three Wheelers, Cars (Manual & Auto), and Heavy Vehicles (Lorry, Bus, Prime Mover).</p>
-            </details>
-            <details class="faq-item">
-              <summary>Do you help with learner permits?</summary>
-              <p>Yes, we guide you through the entire process, including the RMV medical tests and documentation for the learner permit.</p>
-            </details>
-            <details class="faq-item">
-              <summary>Can beginners join?</summary>
-              <p>Absolutely! We specialize in training beginners from scratch in our dedicated safe training ground before moving to real roads.</p>
-            </details>
-            <details class="faq-item">
-              <summary>Do you provide heavy vehicle training?</summary>
-              <p>Yes, we are fully equipped and certified to provide training for Lorries, Buses, and Prime Movers.</p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact / Location -->
-      <section id="contact" class="contact section-padding">
-        <div class="container">
-          <div class="section-header fade-up">
-            <h2>Get in Touch</h2>
-            <div class="heading-line"></div>
-          </div>
-          <div class="contact-grid">
-            <div class="contact-info fade-up">
-              <h3>Contact Information</h3>
-              <p>Ready to start your driving journey? Reach out to us today.</p>
-              <ul class="contact-list">
-                <li>
-                  <i data-lucide="map-pin"></i>
-                  <span>130 Mihindu Mawatha, Veyangoda, Sri Lanka</span>
-                </li>
-                <li>
-                  <i data-lucide="phone"></i>
-                  <span>033 229 6625</span>
-                </li>
-                <li>
-                  <i data-lucide="mail"></i>
-                  <span>sarathdrivingschool@gmail.com</span>
-                </li>
+            <div class="standard-text fade-up delay-1">
+              <span class="eyebrow">THE SARATH STANDARD</span>
+              <h2>A Legacy of<br>Safe Driving</h2>
+              <p>For over 40 years, Sarath Driving School has set the benchmark for driver education in Sri Lanka. We don't just teach you how to pass a test; we forge disciplined, highly-skilled drivers capable of handling any situation with absolute confidence.</p>
+              <ul class="luxury-list">
+                <li><i data-lucide="check"></i> Government Approved 'A Grade' Institution</li>
+                <li><i data-lucide="check"></i> Over 60,000+ Students Successfully Trained</li>
+                <li><i data-lucide="check"></i> Exclusive Private Training Grounds</li>
               </ul>
-              <div class="social-links mt-4">
-                <a href="#" class="social-icon"><i data-lucide="facebook"></i></a>
-                <a href="#" class="social-icon"><i data-lucide="instagram"></i></a>
-              </div>
-            </div>
-            <div class="contact-form-wrapper fade-up delay-1">
-              <form class="contact-form" onsubmit="event.preventDefault();">
-                <div class="form-group">
-                  <input type="text" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                  <input type="tel" placeholder="Phone Number" required>
-                </div>
-                <div class="form-group">
-                  <select required>
-                    <option value="" disabled selected>Course Interested In</option>
-                    <option value="car">Car (Manual/Auto)</option>
-                    <option value="bike">Motorcycle</option>
-                    <option value="threewheeler">Three Wheeler</option>
-                    <option value="heavy">Heavy Vehicle</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <textarea placeholder="Your Message" rows="4"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary w-full">Send Message</button>
-              </form>
+              <a href="/about.html" class="btn btn-outline-luxury mt-4">JOIN THE LEGACY</a>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonial-split theme-light">
+        <div class="testimonial-image-half fade-up"></div>
+        <div class="testimonial-content-half fade-up delay-1">
+          <div class="badge-pill">Testimonials</div>
+          <h2 class="testimonial-heading">WHAT OUR SUCCESSFUL DRIVERS SAY</h2>
+          
+          <div class="testimonial-carousel">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card active" data-index="0">
+              <div class="testimonial-stars">
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+              </div>
+              <p class="testimonial-text">"I had an incredible experience learning to drive here. The instructors were incredibly patient, professional, and took the time to build my confidence behind the wheel. The private training grounds made the first few lessons completely stress-free. I passed my exam on the first try!"</p>
+              <div class="testimonial-author">Kasun Perera</div>
+              <div class="testimonial-title">Customer - Light Vehicle</div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card" data-index="1">
+              <div class="testimonial-stars">
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+              </div>
+              <p class="testimonial-text">"Upgrading my license to commercial heavy vehicles was a breeze with Sarath Driving School. Their fleet is top-notch and the instructors have decades of real-world experience. They teach you not just how to drive, but how to be a professional on the road."</p>
+              <div class="testimonial-author">Nimal Fernando</div>
+              <div class="testimonial-title">Customer - Heavy Commercial</div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card" data-index="2">
+              <div class="testimonial-stars">
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+                <i data-lucide="star" fill="currentColor"></i>
+              </div>
+              <p class="testimonial-text">"I was terrified of learning to ride a motorcycle in traffic, but their structured training program completely changed my mindset. The focus on balance, control, and safety is unmatched. Highly recommend to anyone looking to get their license the right way."</p>
+              <div class="testimonial-author">Dilhani Silva</div>
+              <div class="testimonial-title">Customer - Motorcycle</div>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn prev-btn"><i data-lucide="chevron-left"></i></button>
+            <button class="carousel-btn next-btn"><i data-lucide="chevron-right"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Footer Section -->
+      <section id="contact" class="luxury-contact section-padding">
+        <div class="container">
+          <div class="contact-box fade-up">
+            <h2>Begin Your Journey</h2>
+            <p>Contact our Veyangoda Head Office to schedule your consultation.</p>
+            <div class="contact-methods">
+              <div class="method">
+                <i data-lucide="phone"></i>
+                <span>+94 71 955 5777</span>
+              </div>
+              <div class="method">
+                <i data-lucide="mail"></i>
+                <span>sarathdrivingschool@gmail.com</span>
+              </div>
+              <div class="method">
+                <i data-lucide="map-pin"></i>
+                <span>130 Mihindu Mawatha, Veyangoda</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="luxury-footer">
       <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <h2>Sarath Driving School</h2>
-            <p>Drive with Confidence. Learn from the Experts.</p>
+        <div class="footer-content">
+          <div class="brand">SARATH DRIVING SCHOOL</div>
+          <div class="copyright">&copy; 2026. All Rights Reserved. Designed for Excellence.</div>
+          <div class="socials">
+            <a href="#"><i data-lucide="facebook"></i></a>
+            <a href="#"><i data-lucide="instagram"></i></a>
           </div>
-          <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#courses">Courses</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-contact">
-            <h3>Contact Us</h3>
-            <p>033 229 6625</p>
-            <p>Veyangoda, Sri Lanka</p>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 Sarath Driving School. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/94719555777" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
-      <i data-lucide="message-circle"></i>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/94719555777" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+      </svg>
     </a>
-
-    <!-- Back to top -->
-    <button class="back-to-top" id="back-to-top">
-      <i data-lucide="chevron-up"></i>
-    </button>
 
     <script type="module" src="/main.js"></script>
     <script>
