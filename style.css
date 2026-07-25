@@ -821,9 +821,11 @@ ul {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.road-sign-card:hover {
-  transform: rotate(45deg) scale(1.05);
-  box-shadow: 0 30px 60px rgba(0,0,0,0.9);
+@media (hover: hover) and (pointer: fine) {
+  .road-sign-card:hover {
+    transform: rotate(45deg) scale(1.05);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.9);
+  }
 }
 
 /* Inner thick black border for authentic sign look */
@@ -1502,16 +1504,6 @@ ul {
    Mobile Optimization & Responsive Menu Overlay
    ========================================================================== */
 @media (max-width: 900px) {
-  /* Disable scroll animations on mobile */
-  .fade-up,
-  .blur-reveal,
-  .scale-in-image {
-    opacity: 1 !important;
-    transform: none !important;
-    filter: none !important;
-    transition: none !important;
-  }
-  
   html, body {
     overflow-x: hidden;
   }
