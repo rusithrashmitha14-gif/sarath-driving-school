@@ -1586,7 +1586,6 @@ ul {
     display: flex !important;
     flex-direction: row !important;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     gap: 2.5rem;
     padding: 1rem 0 2rem 0;
     -ms-overflow-style: none;
@@ -1601,12 +1600,20 @@ ul {
   .mobile-horizontal-scroll::-webkit-scrollbar {
     display: none;
   }
+  
   .mobile-horizontal-scroll .road-sign-wrapper,
   .mobile-horizontal-scroll .hero-quick-card {
+    scroll-snap-align: none !important;
+    animation: none !important;
+    transition: none !important;
     flex: 0 0 85%;
-    scroll-snap-align: center;
     padding: 0;
     margin-bottom: 0;
+  }
+  
+  .mobile-horizontal-scroll .road-sign-card {
+    animation: none !important;
+    transition: none !important;
   }
   
   /* Fix Contact Page Layout */
