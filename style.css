@@ -1586,6 +1586,7 @@ ul {
     display: flex !important;
     flex-direction: row !important;
     overflow-x: auto;
+    scroll-snap-type: x mandatory;
     gap: 2.5rem;
     padding: 1rem 0 2rem 0;
     -ms-overflow-style: none;
@@ -1601,11 +1602,18 @@ ul {
     display: none;
   }
   
-  .mobile-horizontal-scroll .road-sign-wrapper,
-  .mobile-horizontal-scroll .hero-quick-card {
-    scroll-snap-align: none !important;
+  /* Force disable any cached fade-up classes on road signs */
+  .mobile-horizontal-scroll .road-sign-wrapper {
+    opacity: 1 !important;
+    transform: none !important;
     animation: none !important;
     transition: none !important;
+    visibility: visible !important;
+  }
+  
+  .mobile-horizontal-scroll .road-sign-wrapper,
+  .mobile-horizontal-scroll .hero-quick-card {
+    scroll-snap-align: center;
     flex: 0 0 85%;
     padding: 0;
     margin-bottom: 0;
